@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: auto;
+    font-family: sans-serif;
+}
+.landing_page {
+    max-width: 990px;
+    border: 1px solid #444;
+    margin: auto;
+}
+.landing_page h3 {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    top: -10px;
+    left: 22%;
+}
+
+.header h2 {
+    background: blue;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+}
+.bold {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5px;
+}
+.text_underline {
+    text-decoration: underline;
+}
+.landing_page_content {
+    overflow: auto;
+    max-width: 77%;
+    margin: 15px auto;
+}
+.landing_page_txt {
+    float: left;
+    max-width: 66%;
+}
+.landing_page_img {
+    float: right;
+}
+.landing_page_txt span {
+    font-size: 1.3em;
+}
+.bold_txt {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+.bold_txt span {
+    font-size: 18px;
+    font-weight: 900;
+    color: red;
+    text-decoration: underline;
+}
+.subscribe {
+    margin: 30px 30px;
+}
+.subscribe input {
+    padding: 5px;
+}   
+.subscribe input::placeholder {
+    color: #e6dbdb;
+}
+.btn {
+    display: block;
+    padding: 10px 20px;
+    margin: 15px 0 0 65px;
+    background: orange;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.landing_page_logos img {
+    display: inline-block;
+    margin: auto 40px;
+}
