@@ -10,13 +10,12 @@
     margin: auto;
   }
   /* Start Landing page
-     ========================================= */
+           ========================================= */
   .landing_page {
     border: 1px solid #444;
     margin: 20px 0;
   }
-  .landing_page > h3,
-  .sales_page > h3 {
+  .heading_txt {
     position: relative;
     text-align: center;
     display: inline-block;
@@ -95,10 +94,10 @@
     margin: 0 25px;
   }
   /* End Landing page
-     ========================================= */
+           ========================================= */
   
   /* Start Sales Page
-     ========================================= */
+           ========================================= */
   .sales_page {
     overflow: hidden;
   }
@@ -142,7 +141,6 @@
   }
   .table_upper_elements {
     position: relative;
-    margin: 50px auto 0;
     overflow: hidden;
   }
   .table_upper_arrow {
@@ -157,6 +155,7 @@
   }
   .table_upper_elements_img {
     float: right;
+    margin-left: 100px;
   }
   
   .sales_table_section {
@@ -220,59 +219,192 @@
     padding: 10px;
   }
   .computer_txt span {
-      font-style: italic;
+    font-style: italic;
   }
   .yellow_section {
-      background: #f7f729;
-      margin: 40px 0;
+    background: #f7f729;
+    margin: 40px 0;
   }
   .yellow_section p {
     text-align: center;
     font-weight: bold;
-    padding: 30px 0; 
+    padding: 30px 0;
     color: #0f0f8e;
     font-size: 1em;
   }
   .sales_page_long_txt {
-      position: relative;
-      margin: 20px 0;
+    position: relative;
+    margin: 20px 0;
   }
   .sales_page_long_txt > p {
-      display: inline-block;
-      width: 80%;      
+    display: inline-block;
+    width: 80%;
   }
   .sales_page_long_txt p:last-child {
-      margin-top: 20px;
+    margin-top: 20px;
   }
   .sales_page_long_txt img {
-      display: inline-block;
+    display: inline-block;
   }
   .long_txt_arrow {
-      margin: 20px auto 0;
-      display: inline-block;
-      position: relative;
-      left: 25%;
+    display: inline-block;
+    position: relative;
+    left: 25%;
   }
   .arrow-btn {
     position: relative;
-    top: 10px;    
-    margin: 40px 0;
+    top: 10px;
+    margin: 40px 10px;
   }
   .bottom_txt h3 {
-      color: #000;
-      font-size: 16px;
-      margin-bottom: 10px;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
   .arrow_container {
-      position: relative;
+    position: relative;
   }
   .left_arrow_container {
-      left: 39%;
-      margin: 0;
+    left: 39%;
+    margin: 0;
   }
   .left-arrow {
-      float: right;
+    float: right;
   }
   /* End Sales Page
-     ========================================= */
+           ========================================= */
   
+  /* Start Checkout Page
+           ========================================= */
+  .top_elements {
+    overflow: hidden;
+  }
+  .checkout_top_images {
+    width: 60%;
+    float: left;
+  }
+  .checkout_top_points {
+    width: 40%;
+    float: right;
+  }
+  
+  .checkout .checkout_inner_content {
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .checkout .checkout_inner_content--img {
+    width: 40%;
+    float: left;
+  }
+  .checkout .checkout_inner_content--from {
+    width: 60%;
+    float: right;
+  }
+  .payment_method {
+    overflow: hidden;
+  }
+  .payment_form,
+  .payment_images {
+    width: 49%;
+    margin: 10px 0;
+    float: left;
+  }
+  .payment_images {
+    float: right;
+  }
+  .payment_form input {
+      margin-bottom: 5px;
+  }
+  .checkout_inner_content--form {
+    overflow: hidden;
+    }
+  .checkout_inner_content--form input {
+    padding: 5px;
+    margin: 5px 0;
+  }
+  .checkout_inner_content--form p {
+      margin-bottom: 10px;
+  }
+  .checkout_input input {
+    width: 48.8%;
+    display: inline-block;
+  }
+  .dropdown_container {
+    margin: 10px 0;
+  }
+  .dropdown_container select {
+      padding: 5px;
+  }
+  .dropdown_container .dropdown_menu {
+    width: 50%;
+  }
+  .payment_second_input > input {
+    width: 99%;
+  }
+  .payment_third_input input:nth-child(1) {
+    width: 20%;
+  }
+  .payment_third_input input:nth-child(2) {
+    width: 77.5%;
+  }
+  
+  .payment_images--img {
+    display: inline-block;
+    width: 48%;
+  }
+  .payment_images--img img {
+      position: relative;
+      top: 10px;
+  }
+  .checkout .checkbox {
+    margin-top: 10px;
+  }
+  .payment_center_img {
+    display: block;
+    margin: auto;
+  }
+  #checkout-modal {
+      overflow: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      background: #fff;
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s;
+      box-shadow:rgb(209, 175, 209) 1px 1px 14px 3px;
+  }
+  .close {
+      border: 1px solid #ccc;
+      color: #ccc;
+      float: right;
+      font-size: 26px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 5px 10px;
+      padding: 0;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+    }
+    .checkout_inner_section {
+        margin: 10px;
+    }
+    button {
+        border: none;
+        outline: none;
+        cursor: pointer;        
+    }
+  /* End Checkout Page
+           ========================================= */
