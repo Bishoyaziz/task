@@ -15,8 +15,8 @@
     border: 1px solid #444;
     margin: 20px 0;
   }
-  .landing_page h3,
-  .sales_page h3 {
+  .landing_page > h3,
+  .sales_page > h3 {
     position: relative;
     text-align: center;
     display: inline-block;
@@ -81,7 +81,6 @@
     color: #e6dbdb;
   }
   .btn {
-    display: block;
     padding: 10px 20px;
     margin: 15px 0 0 65px;
     background: orange;
@@ -93,7 +92,7 @@
   }
   .inner_content_logos img {
     display: inline-block;
-    margin: auto 40px;
+    margin: 0 25px;
   }
   /* End Landing page
      ========================================= */
@@ -144,8 +143,7 @@
   .table_upper_elements {
     position: relative;
     margin: 50px auto 0;
-    width: 50%;
-    overflow: auto;
+    overflow: hidden;
   }
   .table_upper_arrow {
     float: left;
@@ -185,6 +183,7 @@
   
   .sales_table th {
     height: 40px;
+    padding-right: 5px;
   }
   
   .th_center {
@@ -222,6 +221,57 @@
   }
   .computer_txt span {
       font-style: italic;
+  }
+  .yellow_section {
+      background: #f7f729;
+      margin: 40px 0;
+  }
+  .yellow_section p {
+    text-align: center;
+    font-weight: bold;
+    padding: 30px 0; 
+    color: #0f0f8e;
+    font-size: 1em;
+  }
+  .sales_page_long_txt {
+      position: relative;
+      margin: 20px 0;
+  }
+  .sales_page_long_txt > p {
+      display: inline-block;
+      width: 80%;      
+  }
+  .sales_page_long_txt p:last-child {
+      margin-top: 20px;
+  }
+  .sales_page_long_txt img {
+      display: inline-block;
+  }
+  .long_txt_arrow {
+      margin: 20px auto 0;
+      display: inline-block;
+      position: relative;
+      left: 25%;
+  }
+  .arrow-btn {
+    position: relative;
+    top: 10px;    
+    margin: 40px 0;
+  }
+  .bottom_txt h3 {
+      color: #000;
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
+  .arrow_container {
+      position: relative;
+  }
+  .left_arrow_container {
+      left: 39%;
+      margin: 0;
+  }
+  .left-arrow {
+      float: right;
   }
   /* End Sales Page
      ========================================= */
