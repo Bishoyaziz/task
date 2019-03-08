@@ -1,7 +1,11 @@
 * {
 	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;    
+    -ms-box-sizing: border-box;
+	box-sizing: border-box;    
 }
 body {
 	overflow: auto;
@@ -50,7 +54,7 @@ body {
 .inner_content_content {
 	overflow: auto;
 	max-width: 77%;
-	margin: 20px auto 0px;
+	margin: 20px auto 0;
 }
 .inner_content_txt {
 	float: left;
@@ -371,7 +375,7 @@ table, th, td {
 .checkout_inner_section .heading_txt {
 	top: -10px
 }
-#checkout-modal {
+.checkout {
 	overflow: auto;
 	border: 1px solid #ccc;
 	border-radius: 10px;

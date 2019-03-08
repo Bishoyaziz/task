@@ -12,10 +12,3 @@ function showModal() {
 closeBtn.onclick = function(){
     modal.style.display = 'none';
 };
-
-
-// document.body.addEventListener("click", function() {
-//     if (modal == true) {
-//         modal.classList.add('close-modal');
-//     }
-// });
