@@ -15,6 +15,7 @@
     border: 1px solid #444;
     margin: 20px 0;
   }
+
   .heading_txt {
     position: relative;
     text-align: center;
@@ -23,7 +24,9 @@
     left: 22%;
     color: #ffa500;
   }
-  
+  .landing_page .heading_txt {
+      top: -40px;
+  }
   .header h2 {
     background: #1a1a84;
     text-align: center;
@@ -101,6 +104,9 @@
            ========================================= */
   .sales_page {
     overflow: hidden;
+  }
+  .sales_page .heading_txt {
+      top: -55px;
   }
   .sales_header_img {
     position: relative;
@@ -418,6 +424,9 @@
     .sales_page_bottom_txt_parent {
         margin: 20px;
     }   
+    .logo_section img {
+        margin: 10px;
+    }
   /* End Checkout Page
     ========================================= */
 
