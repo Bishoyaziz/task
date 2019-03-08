@@ -157,7 +157,9 @@
     float: right;
     margin-left: 100px;
   }
-  
+  .sales_table {
+      overflow-x: auto;
+  }
   .sales_table_section {
     margin: auto;
     display: inline-block;
@@ -168,16 +170,18 @@
     -o-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    overflow: auto;
   }
   table,
   th,
   td {
     border-collapse: collapse;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
   }
   
   .sales_table {
     text-align: right;
+    overflow: auto;
   }
   
   .sales_table th {
@@ -315,12 +319,11 @@
   .payment_form input {
       margin-bottom: 5px;
   }
-  .checkout_inner_content--form {
-    overflow: hidden;
-    }
+
   .checkout_inner_content--form input {
     padding: 5px;
     margin: 5px 0;
+    position: relative;
   }
   .checkout_inner_content--form p {
       margin-bottom: 10px;
@@ -385,9 +388,12 @@
       box-shadow:rgb(209, 175, 209) 1px 1px 14px 3px;
   }
   .close {
-      border: 1px solid #ccc;
+      border: 2px solid #ccc;
       color: #ccc;
-      float: right;
+      float: none;
+      position: fixed;
+      z-index: 999;
+      right: 12%;
       font-size: 26px;
       font-weight: bold;
       cursor: pointer;
@@ -407,4 +413,179 @@
         cursor: pointer;        
     }
   /* End Checkout Page
-           ========================================= */
+    ========================================= */
+
+  /* Start Media Quaries
+    ========================================= */
+    @media (min-width: 768px) and (max-width: 992px) {
+        p,table,.yellow_section {
+            margin: 20px;
+        }
+        .inner_content_logos img {
+            display: inline-block;
+            margin: auto;
+        }
+        .sales_page_long_txt img {
+            display: block;
+            margin: auto;
+        }
+        .bottom_txt h3 {
+            margin-left: 20px;
+        }
+        .computer_txt {
+            border-left: none;
+            text-align: center;
+        }
+        .header h2 {
+            font-size: 1.5em;
+        }
+        .computer_img_section img {
+            display: block;
+        }
+    }
+    @media (max-width: 767px) {
+        .landing_page .bold {
+            padding: 0;
+        }
+        .inner_content_txt {            
+            float: none;
+            max-width: 100%;
+        }
+        .quotes_content {
+            width: 100%;
+        }
+        .quotes_content img {
+            margin: 10px auto;
+            float: none;
+        }
+        .quotes_content p {
+            overflow: hidden;
+            margin: 0;
+        }
+        .quotes_content {
+            margin: 0;
+        }       
+        .landing_page .inner_content_txt span {
+            font-size: 1.1em;
+            text-align: center;
+            margin: auto;
+            display: inline;
+        }
+        .bold_txt {
+            text-align: center;
+        }
+        .btn {
+            margin: 10px;
+        }
+        .inner_content_img {
+            float: none;
+            margin: 20px 0;
+        }
+        .inner_content_logos img {
+            max-width: 100%;
+            display: block;
+            margin: 10px auto;
+        }
+        .sales_header_img,
+        .heading_txt {
+            left: 0;
+            font-size: 12px;
+            display: block;
+            margin: 22px auto 0;
+        }
+        .header h2 {
+            font-size: 1em;
+        }
+        .bold {
+            padding: 0;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: auto;
+        }
+        p {
+            text-align: center;
+            margin: 0 15px;
+        }
+        .long_txt_arrow {
+            left: 0;
+        }
+        .table_upper_elements_img {
+            float: none;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        .computer_txt {
+            border-left: none;
+            text-align: center;
+        }
+        .computer_img_section img ,
+        .long_txt_arrow {
+            display: block;
+        }
+        .yellow_section p {
+            line-height: 1.6;
+        }
+        .sales_page_long_txt > p {
+            display: block;
+            width: 85%;
+        }
+        .sales_page_long_txt img {
+            display: block;
+            margin: 20px auto;
+        }
+        .arrow-btn {
+            margin: 0;
+        }
+        .yellow_section {
+            margin: 10px;
+        }
+        .arrow-btn {
+            margin: 50px 6px;
+        }
+        .bottom_txt h3 {
+            text-align: center;
+        }
+        .checkout .checkout_inner_content--img {
+            width: 100%;
+        }
+        .checkout .checkbox {
+            font-size: 14px;
+            text-align: center;
+        }
+        .code_email input,
+        .dropdown_container select,
+        .payment_form, .payment_images,
+        .payment_images--img input {
+            width: 100%;
+        }
+        .payment_images--img img {
+            top: 0;
+        }
+        .checkout_top_points,
+        .checkout_top_images {
+            width: 100%;
+            float: none;
+        }
+        .checkout_top_points img {
+            display: inline-block;
+        }
+        .sales_table_section {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .inner_content_points img {
+            display: inline;
+        }
+        .sales_header_img {
+            margin-bottom: 20px;
+        }
+        .bold_txt {
+            font-size: 1.1em;
+        }
+    }
+
+
+  /* End  Media Quaries
+    ========================================= */
