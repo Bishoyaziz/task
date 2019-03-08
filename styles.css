@@ -373,9 +373,7 @@
       position: relative;
       top: 10px;
   }
-  .checkout .checkbox {
-    margin-top: 10px;
-  }
+
   .payment_center_img {
     display: block;
     margin: auto;
@@ -411,14 +409,14 @@
       position: fixed;
       z-index: 999;
       right: 12%;
-      font-size: 26px;
+      font-size: 20px;
       font-weight: bold;
       cursor: pointer;
       margin: 5px 10px;
       padding: 0;
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       text-align: center;
     }
     .checkout_inner_section {
