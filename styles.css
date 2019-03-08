@@ -10,7 +10,7 @@
     margin: auto;
   }
   /* Start Landing page
-   ========================================= */
+     ========================================= */
   .landing_page {
     border: 1px solid #444;
     margin: 20px 0;
@@ -96,10 +96,10 @@
     margin: auto 40px;
   }
   /* End Landing page
-   ========================================= */
+     ========================================= */
   
   /* Start Sales Page
-   ========================================= */
+     ========================================= */
   .sales_page {
     overflow: hidden;
   }
@@ -166,6 +166,10 @@
     display: inline-block;
     position: relative;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   table,
@@ -180,7 +184,7 @@
   }
   
   .sales_table th {
-      height: 40px;
+    height: 40px;
   }
   
   .th_center {
@@ -192,8 +196,33 @@
     text-align: center;
   }
   .tr_bg_color {
-      background: #cbfbcb;
+    background: #cbfbcb;
+  }
+  .computer_img_section {
+    border: 2px solid #333;
+    display: inline-block;
+    margin: auto;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .computer_img_section img {
+    display: inline-block;
+    margin: auto;
+  }
+  .computer_txt {
+    display: inline-block;
+    border-left: 2px solid #333;
+    padding: 10px;
+  }
+  .computer_txt span {
+      font-style: italic;
   }
   /* End Sales Page
-   ========================================= */
+     ========================================= */
   
