@@ -150,6 +150,12 @@
     position: relative;
     overflow: hidden;
   }
+  .table_word {
+      font-size: 1em;
+      color: #7373e2;
+      font-weight: bold;
+      text-shadow: 2px 1px #ffd1d1;
+  }
   .table_upper_arrow {
     float: left;
   }
