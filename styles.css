@@ -19,7 +19,7 @@
     position: relative;
     text-align: center;
     display: inline-block;
-    top: -10px;
+    top: -22px;
     left: 22%;
     color: #ffa500;
   }
@@ -75,6 +75,7 @@
   .subscribe input {
     padding: 5px;
     font-size: 15px;
+    border: 1px solid #ccc;
   }
   .subscribe input::placeholder {
     color: #e6dbdb;
@@ -171,6 +172,7 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     overflow: auto;
+    margin-bottom: 10px;
   }
   table,
   th,
@@ -238,7 +240,7 @@
   }
   .sales_page_long_txt {
     position: relative;
-    margin: 20px 0;
+    margin: 20px;
   }
   .sales_page_long_txt > p {
     display: inline-block;
@@ -412,12 +414,37 @@
         outline: none;
         cursor: pointer;        
     }
+    .bottom_txt,
+    .sales_page_bottom_txt_parent {
+        margin: 20px;
+    }   
   /* End Checkout Page
     ========================================= */
 
   /* Start Media Quaries
     ========================================= */
     @media (min-width: 768px) and (max-width: 992px) {
+        .checkout .checkout_inner_content--img {
+            width: 100%;
+            float: none;            
+        }
+        .checkout .checkout_inner_content--img img {
+            display: block;
+            margin: auto;
+        }
+        .checkout_top_points,
+        .checkout_top_images {
+            width: 100%;
+            float: none;
+        }
+        .checkout_top_points--content,
+        .checkout_inner_content--form {
+            text-align: center;
+        }
+        .heading_txt {
+            left: 10px;
+            display: block;
+        }
         p,table,.yellow_section {
             margin: 20px;
         }
