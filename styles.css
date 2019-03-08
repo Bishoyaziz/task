@@ -380,6 +380,9 @@
     display: block;
     margin: auto;
   }
+  .checkout_inner_section .heading_txt {
+      top: -10px
+  }
   #checkout-modal {
       overflow: auto;
       border: 1px solid #ccc;
