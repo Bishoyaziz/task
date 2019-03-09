@@ -8,11 +8,12 @@
 	box-sizing: border-box;    
 }
 
-body {
+html,body {
 	overflow: auto;
 	font-family: sans-serif;
 	max-width: 990px;
 	margin: auto;
+	scroll-behavior: smooth;
 }
 /* Start Landing page
    ========================================= */
@@ -97,6 +98,8 @@ body {
 	border: none;
 	border-radius: 10px;
 	text-align: center;
+	display: inline-block;
+	text-decoration: none;
 }
 .inner_content_logos img {
 	display: inline-block;
@@ -156,7 +159,7 @@ body {
 	margin-top: 5px;
 }
 .table_word {
-	font-size: 1em;
+	font-size: 1.1em;
 	color: #7373e2;
 	font-weight: bold;
 	text-shadow: 2px 1px #ffd1d1;
@@ -296,6 +299,7 @@ table, th, td {
 
 .top_elements {
 	overflow: hidden;
+	margin-top: 10px;
 }
 .checkout_top_images {
 	width: 60%;
@@ -337,7 +341,7 @@ table, th, td {
 	position: relative;
 }
 .checkout_inner_content--form p {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 .checkout_input input {
 	width: 48.8%;
@@ -387,8 +391,8 @@ table, th, td {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	width: 80%;
-	height: 80%;
+	width: 85%;
+	height: 85%;
 	margin: auto;
 	background: #fff;
 	-webkit-animation-name: fadeIn;
@@ -403,7 +407,7 @@ table, th, td {
 	float: none;
 	position: fixed;
 	z-index: 999;
-	right: 12%;
+	right: 10%;
 	font-size: 20px;
 	font-weight: bold;
 	cursor: pointer;
@@ -671,4 +675,4 @@ button {
 	  transform: translate3d(0, -4px, 0);
 	}
   }
-
+  
