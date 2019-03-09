@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -34,7 +35,11 @@
 					<h1 class="bold_txt">Klicke <span>JETZT</span> auf „Gutschein anfordern“, damit du den Gutschein-Code per E-Mail bekommst!</h1>
 				</div>
 				<div class="subscribe">
-					<span>E-Mail:</span> <input class="subscribe-form-txt" name="subscribe" placeholder="bitte hier den Key senden…" type="text"> <a href="#sales-page" class="btn bounce">Gutschein anfordern</a>
+					<form method="POST" action="">
+						<span>E-Mail:</span>
+						<input class="subscribe-form-txt" name="subscriber" placeholder="bitte hier den Key senden…" type="email">
+						<button name="submit_btn"><a href="#sales-page" class="btn bounce">Gutschein anfordern</a></button>
+					</form>
 				</div>
 			</div>
 			<div class="inner_content_img"><img alt="" src="images/office.png"></div>
